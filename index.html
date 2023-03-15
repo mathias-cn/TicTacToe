@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TicTacToe by Mathias</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js" defer></script>
+</head>
+
+<body>
+    <div class="main">
+
+        <div class="startPopUp">
+
+            <h1 class="title">TicTacToe</h1>
+
+            <div class="namesInputs">
+                <input type="text" id="player1" class="names" placeholder="Player 1">
+                <input type="text" id="player2" class="names" placeholder="Player 2">
+                <div class="errorTxt"></div>
+            </div>
+        
+            <button class="startBtn">Play!</button>
+        </div>
+
+        <div class="playAgainPopUp">
+            <h1 class="winnerName"></h1>
+            <button class="playAgainBtn">Play Again!</button>
+        </div>
+
+        <div class="ticTacContainer">
+
+            <div class="turn">
+                <input type="text" id="currentPlayer" class="currentPlayer" disabled value="" data-current="none">
+            </div>
+
+            <div class="ticTacBtns">
+                <button class="ticTacSingleBtn" data-picked="none" data-index="1"></button>
+                <button class="ticTacSingleBtn" data-picked="none" data-index="2"></button>
+                <button class="ticTacSingleBtn" data-picked="none" data-index="3"></button>
+                <button class="ticTacSingleBtn" data-picked="none" data-index="4"></button>
+                <button class="ticTacSingleBtn" data-picked="none" data-index="5"></button>
+                <button class="ticTacSingleBtn" data-picked="none" data-index="6"></button>
+                <button class="ticTacSingleBtn" data-picked="none" data-index="7"></button>
+                <button class="ticTacSingleBtn" data-picked="none" data-index="8"></button>
+                <button class="ticTacSingleBtn" data-picked="none" data-index="9"></button>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
